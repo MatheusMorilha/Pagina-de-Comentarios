@@ -1,0 +1,179 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(25, 25, 67);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+#commentsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+    width: 850px;
+    box-sizing: border-box;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+
+.formContainer h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 14px;
+    
+}
+
+form label {
+    font-weight: bold;
+}
+
+.formContainer input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(222, 227, 232, 0.272);
+    border: none;
+    box-sizing: border-box;
+}
+
+.formContainer textarea{
+    max-width: 600px;
+    max-height: 55px;
+    min-width: 100%;
+    min-height: 55px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(222, 227, 232, 0.272);
+    border: none;
+    box-sizing: border-box;
+}
+
+.formContainer button{
+    width: 150px;
+    border-radius: 5px;
+    align-self: center;
+    padding: 10px 20px; 
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: rgb(0, 128, 255);
+    border: none;
+}
+
+.commentsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px; 
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box; 
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent; 
+    
+}
+
+.linhaComentario {
+    display: flex;
+    
+    gap: 5px;
+    width: 95%; 
+    background-color: rgba(0, 0, 0, 0.05); 
+    font-size: 13px;
+    border-radius: 5px; 
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 15px;
+    overflow-wrap: break-word; 
+}
+
+.linhaComentario p {
+    max-width: 50%;
+}
+
+@media (max-width: 750px) {
+    .formContainer{
+        max-width: 500px;
+    }
+
+    .commentsContainer {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 550px) {
+    #commentsContainer{
+        max-width: 340px;
+    }
+
+    .formContainer{
+        padding: 20px;
+        
+    }
+
+    .formContainer h1{
+        font-size: 20px;
+        
+    }
+
+    form label {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .formContainer button{
+       
+        font-size: 14px;
+        margin-top: 6px;
+        
+    }
+
+    .commentsContainer {
+        max-width: 340px;
+    }
+}
+
+
+

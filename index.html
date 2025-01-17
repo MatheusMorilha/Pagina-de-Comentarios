@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="commentsContainer">
+        <div class="formContainer">
+            <h1>Faça seu comentário</h1>
+            <form action="#">
+                <label for="nomeInput">Digite seu nome</label>
+                <input type="text" id="nomeInput" placeholder="Seu nome" required>
+                <label for="comentarioInput">No que está pensando?</label>
+                <textarea name="comentarioInput" id="comentarioInput" placeholder="Comente alguma coisa" required></textarea>
+                <button type="submit">Comentar</button>
+            </form>
+        </div>
+
+        <div class="commentsContainer">
+            <h1>Comentários</h1>
+            <div class="comentarios">
+            </div>
+        </div>
+    </section>
+
+    <section id="creditos">
+        <p>Desnvolvido por Matheus Morilha</p>
+    </section>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
